@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+      <h4
+        class="brown-text light"
+        style="border-bottom: 1px solid #ddd; margin-bottom: 30px; padding-bottom: 20px;"
+      >
+        {{ title }}
+      </h4>
+      <div class="row text-center">
+        <div *ngFor="let skill of skills" class="col s4 m2">
+          <img [src]="skill.image" alt="HTML5" class="responsive-img" />
+          {{ skill.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+.toolbar-container {
+  background-color: white;
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+}
+
+.profile-definition {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  box-sizing: content-box;
+  min-height: 90px;
+  padding: 30px 30px 40px;
+  position: relative;
+  width: 190px;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-name {
+  line-height: 100%;
+  color: #039be5 !important;
+  position: absolute;
+  font-size: 2.1rem;
+  padding: 10px 0 12px;
+  text-decoration: none;
+}
+
+.profile-profession {
+  font-size: 20px;
+  color: #795548 !important;
+  font-weight: 300;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu-item--link {
+  padding: 10px 0 12px;
+  display: block;
+}
+
+.menu-item--link:hover {
+  background-color: #fafafa;
+  border-left: 3px solid #039be5;
+}
+
+.user-icon {
+  font-size: 2rem;
+  padding: 0 15px;
+  position: relative;
+  top: 5px;
+}
+
+span {
+  color: #333 !important;
+  font-weight: 300;
+}

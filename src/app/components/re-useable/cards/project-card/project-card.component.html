@@ -1,0 +1,45 @@
+<div class="col s12 m6 l4">
+  <div class="container section-body" style="padding:0;">
+    <div class="card medium">
+      <div
+        [style.background-image]="user_project.imageUrl"
+        class="card-image waves-effect waves-block waves-light"
+        style="background-position: center center; background-repeat: no-repeat; background-size: contain;"
+      ></div>
+
+      <!-- <div class="card-image waves-effect waves-block waves-light">
+          <img [src]="user_project.imageUrl" alt="Bot" class="activator" />
+        </div> -->
+      <div class="card-content">
+        <span class="card-title activator teal-text hoverline">
+          {{ user_project.project_name }}
+          <i class="mdi-navigation-more-vert right"></i
+        ></span>
+        <p>
+          {{ user_project.project_desc }}
+        </p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title brown-text"
+          >Accomplishments<i class="mdi-navigation-close right"></i
+        ></span>
+        <ul *ngFor="let task of user_project.tasks">
+          <li>
+            <i class="far fa-check-square check-square-icon"></i> {{ task }}
+          </li>
+        </ul>
+        <div class="card-action">
+          <a
+            [href]="user_project.project_url"
+            rel="noopener"
+            target="_blank"
+            data-position="top"
+            data-tooltip="View Online"
+            class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+            ><i class="fas fa-external-link-alt"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="toolbar">
+  <app-toolbar></app-toolbar>
+</div>
+
+<div class="intro">
+  <app-intro></app-intro>
+
+  <app-section title="ABOUT">
+    <div class="container flow-text section-body">
+      <blockquote>
+        Mission-driven full stack developer with a passion for thoughtful UI
+        design, collaboration, and teaching.
+      </blockquote>
+      <p>
+        Gaby is a highly experienced and creative coder. He is spontaneous in
+        his decisions and believes in body asleep mind awake. He is willing to
+        participate in any hackathons near him. If you give him a pc and put
+        Pink Floyd music, he will write the best code.
+      </p>
+      <p>
+        As a web developer, I intend to use my obsessive attention to detail, my
+        unequivocal love for making things, and my mission-driven work ethic to
+        literally change the world.
+      </p>
+      <p><strong>I want to make things that make a difference</strong>.</p>
+    </div>
+  </app-section>
+
+  <app-section title="EXPERIENCE">
+    <app-experience-card
+      *ngFor="let user_exp of user_experiences"
+      [user_experience]="user_exp"
+    ></app-experience-card>
+  </app-section>
+
+  <app-section title="PROJECTS">
+    <div class="row">
+      <app-project-card
+        *ngFor="let user_project of user_projects"
+        [user_project]="user_project"
+      ></app-project-card>
+    </div>
+  </app-section>
+
+  <app-section title="SKILLS">
+    <app-skill-card title="HTML" [skills]="skills"> </app-skill-card>
+  </app-section>
+
+  <app-section title="EDUCATION">
+    <app-education-card
+      school_name="CODI"
+      school_period="Beirut, LB | April 2017 - To date"
+      school_result="Full Stack Development Program - Certified by Simplon"
+    ></app-education-card>
+  </app-section>
+
+  <app-section title="CONTACT">
+    <app-contact-card
+      user_email="mailto:info@gabykaram.com"
+      user_github="http://github.com/gk-git"
+      user_linkedin="http://linkedin.com/in/gabykaram"
+    ></app-contact-card>
+  </app-section>
+</div>

@@ -1,0 +1,20 @@
+.toolbar {
+  height: 0;
+  width: 190px;
+  position: relative;
+}
+
+.intro {
+  padding-left: 250px;
+}
+
+.section-body {
+  width: 95%;
+}
+
+blockquote {
+  font-size: 125%;
+  font-weight: 400;
+  margin: 20px 0;
+  padding-left: 1.5rem;
+}

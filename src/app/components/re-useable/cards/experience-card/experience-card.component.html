@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="card" style="margin-bottom: 60px;">
+    <div class="card-content">
+      <div class="row">
+        <div
+          class="col s12 m10"
+          style="    width: 16.66667%;
+        margin-left: 0;"
+        >
+          <a [href]="user_experience.company_link" target="_blank"
+            ><img
+              alt="Codi Studio logo"
+              [src]="user_experience.company_image"
+              class="responsive-img center-block"
+              style="max-height: 60px;"
+          /></a>
+        </div>
+        <div class="col s12 m10">
+          <p>
+            <span class="card-title"
+              ><a
+                [href]="user_experience.company_link"
+                rel="noopener"
+                target="_blank"
+                class="teal-text hoverline"
+                >{{ user_experience.company_name }}</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="role brown-text">{{ user_experience.role }}</div>
+      <p>
+        <em class="grey-text">{{ user_experience.company_desc }}</em>
+      </p>
+      <h6>Activities</h6>
+      <ul *ngFor="let task of user_experience.tasks">
+        <li>
+          <i class="fas fa-check-circle check-circle-icon"></i>
+          {{ task }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-action">
+      <span style="color: #666;">{{ user_experience.period_place }}</span>
+    </div>
+  </div>
+</div>

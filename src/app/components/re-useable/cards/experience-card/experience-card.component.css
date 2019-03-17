@@ -1,0 +1,54 @@
+.card .card-content {
+  padding-bottom: 0;
+}
+.row {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.card .card-content .row .col {
+  min-height: 63px;
+}
+
+.role {
+  position: absolute;
+  right: 38px;
+  top: 35px;
+}
+
+ul {
+  list-style-type: none !important;
+}
+li {
+  list-style-type: none !important;
+}
+
+h6 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.check-circle-icon {
+  color: #039be5;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.card .card-action {
+  border-top: none;
+}
+
+.card .card-content p {
+  padding: 0 !important;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 860px;
+  }
+}

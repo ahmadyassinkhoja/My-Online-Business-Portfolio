@@ -1,0 +1,13 @@
+ul {
+  list-style-type: none !important;
+}
+li {
+  list-style-type: none !important;
+}
+
+.check-square-icon {
+  color: #039be5;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 10px;
+}

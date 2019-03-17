@@ -1,0 +1,6 @@
+.intro-container {
+  position: relative;
+  height: 100vh;
+  background: center center/cover
+    url("https://musicstats.org/wp-content/uploads/2017/01/pexels-photoo.jpg");
+}
