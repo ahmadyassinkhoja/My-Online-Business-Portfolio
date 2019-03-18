@@ -10,7 +10,5 @@ export class SectionComponent implements OnInit {
 
   @Input() title;
 
-  ngOnInit() {
-    console.log(this.title);
-  }
+  ngOnInit() {}
 }

@@ -6,7 +6,6 @@
 }
 
 .profile-definition {
-  background-color: #fafafa;
   border-bottom: 1px solid #ddd;
   box-sizing: content-box;
   min-height: 90px;
@@ -26,9 +25,10 @@
 }
 
 .profile-profession {
-  font-size: 20px;
+  font-size: 15px;
   color: #795548 !important;
   font-weight: 300;
+  display: block;
 }
 
 .menu {
