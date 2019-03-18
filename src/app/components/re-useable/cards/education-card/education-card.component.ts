@@ -8,9 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class EducationCardComponent implements OnInit {
   constructor() {}
 
-  @Input() school_name;
-  @Input() school_period;
-  @Input() school_result;
+  @Input() user_school;
 
   ngOnInit() {}
 }

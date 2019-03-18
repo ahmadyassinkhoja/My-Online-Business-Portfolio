@@ -43,22 +43,29 @@
   </app-section>
 
   <app-section title="SKILLS">
-    <app-skill-card title="HTML" [skills]="skills"> </app-skill-card>
+    <app-skill-card
+      *ngFor="let user_skill of user_skills"
+      [user_skill]="user_skill"
+    >
+    </app-skill-card>
   </app-section>
 
   <app-section title="EDUCATION">
-    <app-education-card
-      school_name="CODI"
-      school_period="Beirut, LB | April 2017 - To date"
-      school_result="Full Stack Development Program - Certified by Simplon"
-    ></app-education-card>
+    <div class="container">
+      <div class="row">
+        <app-education-card
+          *ngFor="let user_school of user_schools"
+          [user_school]="user_school"
+        ></app-education-card>
+      </div>
+    </div>
   </app-section>
 
   <app-section title="CONTACT">
     <app-contact-card
-      user_email="mailto:info@gabykaram.com"
-      user_github="http://github.com/gk-git"
-      user_linkedin="http://linkedin.com/in/gabykaram"
+      user_email="mailto:ahmad.mohammad.khoja@gmail.com"
+      user_github="http://github.com/ahmadyassinkhoja"
+      user_linkedin="http://linkedin.com/in/ahmad-khojah"
     ></app-contact-card>
   </app-section>
 </div>

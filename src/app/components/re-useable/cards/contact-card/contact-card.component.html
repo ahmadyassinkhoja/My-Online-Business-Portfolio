@@ -8,7 +8,7 @@
       ><i class="fa fa-envelope"></i>
     </a>
     <a [href]="user_email" target="_blank" class="hoverline contact-link">
-      {{ user_email }}
+      {{ user_email ? user_email.slice(7) : null }}
     </a>
   </p>
   <p>

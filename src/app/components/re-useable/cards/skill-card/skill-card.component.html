@@ -5,11 +5,19 @@
         class="brown-text light"
         style="border-bottom: 1px solid #ddd; margin-bottom: 30px; padding-bottom: 20px;"
       >
-        {{ title }}
+        {{ user_skill.title }}
       </h4>
       <div class="row text-center">
-        <div *ngFor="let skill of skills" class="col s4 m2">
-          <img [src]="skill.image" alt="HTML5" class="responsive-img" />
+        <div
+          *ngFor="let skill of user_skill.skills"
+          class="col s4 m2"
+          style="margin: 10px;"
+        >
+          <img
+            [src]="skill.image"
+            alt="HTML5"
+            class="responsive-img skill-image"
+          />
           {{ skill.name }}
         </div>
       </div>

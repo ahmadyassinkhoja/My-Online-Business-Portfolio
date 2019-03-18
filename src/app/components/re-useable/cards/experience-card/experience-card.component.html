@@ -34,6 +34,14 @@
       <p>
         <em class="grey-text">{{ user_experience.company_desc }}</em>
       </p>
+      <h6>Learning Outcomes</h6>
+      <ul *ngFor="let outcome of user_experience.learningOutcomes">
+        <li>
+          <i class="fas fa-check-circle check-circle-icon"></i>
+          {{ outcome }}
+        </li>
+      </ul>
+
       <h6>Activities</h6>
       <ul *ngFor="let task of user_experience.tasks">
         <li>
@@ -43,7 +51,7 @@
       </ul>
     </div>
 
-    <div class="card-action">
+    <div class="card-action" style="background-color: rgba(0, 0, 0, 0.02);">
       <span style="color: #666;">{{ user_experience.period_place }}</span>
     </div>
   </div>

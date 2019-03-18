@@ -8,8 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SkillCardComponent implements OnInit {
   constructor() {}
 
-  @Input() title;
-  @Input() skills;
+  @Input() user_skill;
 
   ngOnInit() {}
 }

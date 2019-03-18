@@ -8,13 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ahmad-khoja-portfolio';
 
-  skills = [
-    {
-      name: 'HTML5',
-      image: 'assets/images/html5.png'
-    }
-  ];
-
   tasks = [
     'Developing an ERP system for Logic Systems (front-end and backend)',
     'Developing a Supermarket Mobile Application (front-end and backend)',
@@ -30,6 +23,14 @@ export class AppComponent {
       company_desc: `
       CIATEK® IT Services works with the strategic needs of our
       clients businesses in mind to determine the technology capabilities needed to support their long-term goals.`,
+      learningOutcomes: [
+        'Introduced to React Native',
+        'Introduced to Graphql',
+        'Introduced to Prisma.io',
+        'Introduced to Netlify',
+        'Introduced to Heroku',
+        'Introduced to Firebase'
+      ],
       tasks: [
         'Developing an ERP system for Logic Systems (front-end and backend)',
         'Developing a Supermarket Mobile Application (front-end and backend)',
@@ -45,28 +46,43 @@ export class AppComponent {
       company_desc: `
       Founded in 1995, ITXI is a thriving application development and IT consulting firm that serves enterprise
       organizations worldwide in the Air-Travel Industry (Airlines & Airports). `,
+      learningOutcomes: [
+        'Introduced to Angular 6',
+        'Introduced to Vue.js',
+        'Introduced to BitBucket',
+        'Introduced to JIRA software',
+        'Introduced to Ag-grid Table',
+        'Introduced to Golden Layouts'
+      ],
       tasks: [
-        ' Worked as Front-End Web Developer Trainee in Angular 6 and Vue js',
-        ' Worked in BDS project',
-        'Worked in Fin project',
-        'Introduced to JIRA software and Agile methodology'
+        'Worked as Front-End Web Developer Trainee',
+        'Worked in BDS project',
+        'Worked in Fin project'
       ],
       period_place: 'July 2018  - September 2018 | Beirut, LB'
     },
     {
       company_link: 'https://www.codi.tech',
       company_image: 'assets/images/codi-logo.svg',
-      company_name: 'CODI - LB',
+      company_name: 'CODI BOOTCAMP - LB',
       role: 'Full-Stack Web Developer Trainee',
       company_desc: `
       Codi, based in Beirut, offers a free and intensive 6-months programme to become full-stack web developers
       (front and back end), digital project managers… and many other digital professions which are in high demand today `,
+      learningOutcomes: [
+        'Introduced to React Js',
+        'Introduced to Node Js',
+        'Introduced to AGILE Methodology',
+        'Introduced to Mongo DB',
+        'Introduced to Linux OS',
+        'Introduced to Linode VPS'
+      ],
       tasks: [
-        'Back end (Node Js, SQL, Database)',
-        'Front end (Javascript ’ES6’, React.js, Bootstrap, Material UI, HTML, CSS)',
-        'Server Management (LAMP Stack, Linux)',
-        'Project Management (AGILE Methodology)',
-        'Created responsive applications and managed some projects to real clients'
+        'Created Codi Talent Project within a Team',
+        'Created Mini Studio Project within a Team',
+        'Created Snake Game using Vanilla JS',
+        'Finished a lot of tutorials',
+        'Attending a lot of workshops'
       ],
       period_place: 'November 2018  - June 2019 | Beirut, LB'
     }
@@ -98,6 +114,196 @@ export class AppComponent {
         'Built Responsive App'
       ],
       project_url: 'https://supermarket-1542828174855.firebaseapp.com'
+    }
+  ];
+
+  user_skills = [
+    {
+      title: 'HTML',
+      skills: [
+        {
+          name: 'HTML5',
+          image: 'assets/images/html5.png'
+        },
+        {
+          name: 'JSX',
+          image: 'assets/images/react.png'
+        }
+      ]
+    },
+    {
+      title: 'CSS',
+      skills: [
+        {
+          name: 'CSS3',
+          image: 'assets/images/css3.png'
+        },
+        {
+          name: 'Bootstrap',
+          image: 'assets/images/bootstrap.png'
+        },
+        {
+          name: 'Material UI',
+          image: 'assets/images/materialui.png'
+        },
+        {
+          name: 'Picnic',
+          image: 'assets/images/picnic.png'
+        },
+        {
+          name: 'Bulma',
+          image: 'assets/images/bulma.png'
+        }
+      ]
+    },
+    {
+      title: 'Javascript',
+      skills: [
+        {
+          name: 'Javascript',
+          image: 'assets/images/javascript.png'
+        },
+        {
+          name: 'React',
+          image: 'assets/images/react.png'
+        },
+        {
+          name: 'Angular',
+          image: 'assets/images/angular.png'
+        },
+        {
+          name: 'Vue',
+          image: 'assets/images/vuejs.png'
+        },
+        {
+          name: 'Node',
+          image: 'assets/images/nodejs.png'
+        },
+        {
+          name: 'Ionic',
+          image: 'assets/images/ionic.png'
+        },
+        {
+          name: 'React Native',
+          image: 'assets/images/react-native.png'
+        },
+        {
+          name: 'ES6',
+          image: 'assets/images/es6.svg'
+        }
+      ]
+    },
+    {
+      title: 'Back-End',
+      skills: [
+        {
+          name: 'Node',
+          image: 'assets/images/nodejs.png'
+        },
+        {
+          name: 'Laravel',
+          image: 'assets/images/laravel.png'
+        },
+        {
+          name: 'GraphQL',
+          image: 'assets/images/graphql.png'
+        },
+        {
+          name: 'Prisma',
+          image: 'assets/images/prisma.png'
+        }
+      ]
+    },
+    {
+      title: 'Database',
+      skills: [
+        {
+          name: 'MySQL',
+          image: 'assets/images/mysql.png'
+        },
+        {
+          name: 'Mongo DB',
+          image: 'assets/images/mongodb.png'
+        }
+      ]
+    },
+    {
+      title: 'Version Source Control',
+      skills: [
+        {
+          name: 'Github',
+          image: 'assets/images/github.png'
+        },
+        {
+          name: 'Git',
+          image: 'assets/images/git.png'
+        },
+        {
+          name: 'Bitbucket',
+          image: 'assets/images/bitbucket.png'
+        }
+      ]
+    },
+    {
+      title: 'Hosting',
+      skills: [
+        {
+          name: 'Netlify',
+          image: 'assets/images/netlify.png'
+        },
+        {
+          name: 'Heroku',
+          image: 'assets/images/heroku.png'
+        },
+        {
+          name: 'Firebase',
+          image: 'assets/images/firebase.png'
+        },
+        {
+          name: 'Linode VPS',
+          image: 'assets/images/linode.png'
+        }
+      ]
+    },
+    {
+      title: 'Operating System',
+      skills: [
+        {
+          name: 'Windows',
+          image: 'assets/images/windows.png'
+        },
+        {
+          name: 'MAC',
+          image: 'assets/images/mac.png'
+        },
+        {
+          name: 'Linux',
+          image: 'assets/images/linux.png'
+        },
+        {
+          name: 'Arch Linux',
+          image: 'assets/images/arch.png'
+        },
+        {
+          name: 'Ubuntu Linux',
+          image: 'assets/images/ubuntu.png'
+        }
+      ]
+    }
+  ];
+
+  user_schools = [
+    {
+      school_name: 'CODI BOOTCAMP',
+      school_url: 'http://www.codi.tech',
+      school_period: 'Beirut, LB | November 2018 - June 2019',
+      school_result: 'Full Stack Development Program - Certified by Simplon'
+    },
+    {
+      school_name: 'BAU UNIVERSITY',
+      school_url: 'http://www.codi.tech',
+      school_period: 'Beirut, LB | 2014 - 2018',
+      school_result: 'B.S. in Management Information System'
     }
   ];
 }
